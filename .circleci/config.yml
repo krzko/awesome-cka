@@ -1,18 +1,17 @@
 version: 2
-
 jobs:
   pdf_build:
     docker:
       - image: node:slim
     environment:
-      PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "false"
+      PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: false
     steps:
+      - run:
+          name: Versions
+          command: node -v
       - checkout
       - run:
-          name: Check current version of node
-          command: node -v
-      - run:
-          name: npm dependencies
+          name: Install md-to-pdf
           command: |
             set -exu
             npm i md-to-pdf
