@@ -21,6 +21,7 @@ jobs:
           name: Convert md to pdf
           command: |
             set -exu
+            ls -la
             md-to-pdf ./README.md ./awesome-cka-v1.14.1.1.pdf
       - store_artifacts:
           path: ./awesome-cka-v1.14.1.1.pdf
