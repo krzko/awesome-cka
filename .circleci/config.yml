@@ -1,16 +1,31 @@
 version: 2
-jobs:
-  build:
-    docker:
-      - image: debian:stretch
 
+jobs:
+  pdf_build:
+    docker:
+      - image: node:slim
     steps:
       - checkout
-
       - run:
-          name: Greeting
-          command: echo Hello, world.
-
+          name: Check current version of node
+          command: node -v
       - run:
-          name: Print the Current Time
-          command: date
+          name: npm dependencies
+          command: npm i -g md-to-pdf
+      - run:
+          name: Convert md to pdf
+          command: |
+            set -exu
+            md-to-pdf README.md awesome-cka-v1.14.1.1.pdf
+      - store_artifacts:
+          path: ./
+          destination: awesome-cka-v1.14.1.1.pdf
+
+workflows:
+  version: 2
+  build-release:
+    jobs:
+      - pdf_build
+          filters:
+            branches:
+              only: master
