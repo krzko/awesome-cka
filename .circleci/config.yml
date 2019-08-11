@@ -26,6 +26,3 @@ workflows:
   build-release:
     jobs:
       - pdf_build
-          filters:
-            branches:
-              only: master
