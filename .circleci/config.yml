@@ -15,7 +15,6 @@ jobs:
           name: npm dependencies
           command: |
             set -exu
-            export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
             npm i md-to-pdf
       - run:
           name: Convert md to pdf
