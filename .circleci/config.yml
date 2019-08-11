@@ -5,7 +5,7 @@ jobs:
     docker:
       - image: node:slim
     environment:
-      PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "true"
+      PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: "false"
     steps:
       - checkout
       - run:
@@ -16,7 +16,7 @@ jobs:
           command: |
             set -exu
             export PUPPETEER_SKIP_CHROMIUM_DOWNLOAD=true
-            npm i -g md-to-pdf
+            npm i md-to-pdf
       - run:
           name: Convert md to pdf
           command: |
