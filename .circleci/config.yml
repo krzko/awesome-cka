@@ -1,16 +1,32 @@
 version: 2
 jobs:
-  build:
+  pdf_build:
     docker:
-      - image: debian:stretch
-
+      - image: node:slim
+    environment:
+      PUPPETEER_SKIP_CHROMIUM_DOWNLOAD: false
     steps:
+      - run:
+          name: Versions
+          command: node -v
       - checkout
-
       - run:
-          name: Greeting
-          command: echo Hello, world.
-
+          name: Install md-to-pdf
+          command: |
+            set -exu
+            npm i -g md-to-pdf
       - run:
-          name: Print the Current Time
-          command: date
+          name: Convert md to pdf
+          command: |
+            set -exu
+            ls -la
+            md-to-pdf README.md awesome-cka-v1.14.1.1.pdf
+      # - store_artifacts:
+      #     path: ./awesome-cka-v1.14.1.1.pdf
+      #     destination: awesome-cka-v1.14.1.1.pdf
+
+workflows:
+  version: 2
+  build-release:
+    jobs:
+      - pdf_build
