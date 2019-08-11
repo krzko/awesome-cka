@@ -23,7 +23,7 @@ jobs:
             set -exu
             md-to-pdf ./README.md ./awesome-cka-v1.14.1.1.pdf
       - store_artifacts:
-          path: ./
+          path: ./awesome-cka-v1.14.1.1.pdf
           destination: awesome-cka-v1.14.1.1.pdf
 
 workflows:
