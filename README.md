@@ -125,6 +125,8 @@ This following here is great for a testing scenario. It gives you 24 questions t
 
 - [ ] Read **github.com/dgkanatsios/CKAD-exercises** - [https://github.com/dgkanatsios/CKAD-exercises](https://github.com/dgkanatsios/CKAD-exercises) - A set of exercises to prepare for Certified Kubernetes Application Developer exam by Cloud Native Computing Foundation, some overlap with the above but with more content.
 
+- [ ] Do **dev.to/liptanbiswas/ckad-practice-questions-4mpn** - [https://dev.to/liptanbiswas/ckad-practice-questions-4mpn](https://dev.to/liptanbiswas/ckad-practice-questions-4mpn) - A set of practice challenges to prepare for the CNCF Certified Kubernetes Application Developer exam built using Katacoda in already provisioned and running Kubernetes cluster. Tests have verifications in place as well.
+
 ## 🌏 Extra Reading
 
 In case you yearn for more information about the exam and it's topics, here is another brilliant list of curated resoures that you will find handy.
