@@ -25,8 +25,6 @@ The exam consists of the following topics and their total points allocation;
 * 10% - Storage
 * 30% - Troubleshooting
 
--
-
 The latest curriculum can always be found at [https://github.com/cncf/curriculum](https://github.com/cncf/curriculum).
 
 During the exam you are allowed be allowed to open **one** tab apart from the browser based terminal. You can open _any_ link under the [kubernetes.io](kubernetes.io) domain. Some links that will help during the exam are;
