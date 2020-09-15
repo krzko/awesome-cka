@@ -1,10 +1,10 @@
-# ☸ awesome-cka
+# ☸️ awesome-cka
 
 A curated list for awesome resources needed to pass your [Certified Kubernetes Administrator (CKA)](https://www.cncf.io/certification/cka/) exam.
 
 ## 📟 Background
 
-The exam consists of the following, as of writing it is based on curriculum `1.14.1`;
+The exam consists of the following, as of writing it is based on curriculum `1.19`;
 
 * 3 hours
 * 24 questions
@@ -13,7 +13,19 @@ The exam consists of the following, as of writing it is based on curriculum `1.1
 * Chrome browser plus an extension
 * Government-issued non-expired ID
 * Webcam and microphone
-* Steady internet, preferably 5MB up/down.
+* Steady internet, preferably 5MB up/down
+
+### Topics
+
+The exam consists of the following topics and their total points allocation;
+
+* 25% - Cluster Architecture, Installation & Configuration
+* 15% - Workloads & Scheduling
+* 20% - Services & Networking
+* 10% - Storage
+* 30% - Troubleshooting
+
+-
 
 The latest curriculum can always be found at [https://github.com/cncf/curriculum](https://github.com/cncf/curriculum).
 
@@ -33,7 +45,7 @@ You need to be very comfortable with the following tools, so that you are not wa
 
 ### tmux
 
-You only get one console, tmux and screen area allowed. This will allow you to split your single console into multiple windows. ie one master, two nodes. Try and use it in your daily workflow to get comfortable with the default settings.
+You only get one console, tmux and screen area allowed. This will allow you to split your single console into multiple windows. ie one master, two nodes. Try and use it in your daily workflow to get comfortable with the default settings. This is purely optional, most people pass the exam without the needed of `tmux`.
 
 - [ ] **Perform tmux deepdive** - [https://thoughtbot.com/upcase/tmux](https://thoughtbot.com/upcase/tmux) - This course teaches you about tmux's pane and window management, session management, copy-paste, and more. 
 
@@ -58,7 +70,10 @@ You only get one console, tmux and screen area allowed. This will allow you to s
 These aliases will help save the precious time you have. Use these during your studies, so you are used to them on the day.
 
 ```sh
-alias kc='kubectl'
+# Needed
+alias k='kubectl'
+
+# Optional
 alias kgp='kubectl get pods'
 alias kgs='kubectl get svc'
 alias kgc='kubectl get componentstatuses'
