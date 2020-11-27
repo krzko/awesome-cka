@@ -6,9 +6,9 @@ A curated list for awesome resources needed to pass your [Certified Kubernetes A
 
 The exam consists of the following, as of writing it is based on curriculum `1.19`;
 
-* 3 hours
-* 24 questions
-* Pass mark of 74%
+* 2 hours
+* 15-20 questions
+* Pass mark of 66%
 * Remotely proctored
 * Chrome browser plus an extension
 * Government-issued non-expired ID
