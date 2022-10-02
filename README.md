@@ -100,6 +100,10 @@ This is a list of the bare minimum resoures necessary to try and pass the exam.
 
 > **The Kubernetes Book** by Nigel Poulton - [https://www.amazon.com/Kubernetes-Book-Version-January-2018-ebook/dp/B072TS9ZQZ](https://www.amazon.com/Kubernetes-Book-Version-January-2018-ebook/dp/B072TS9ZQZ)
 
+> **Kubernetes Cheat Sheet – 15 Kubectl Commands & Objects** - [https://spacelift.io/blog/kubernetes-cheat-sheet](https://spacelift.io/blog/kubernetes-cheat-sheet)
+
+> **15 Kubernetes Best Practices Every Developer Should Know** - [https://spacelift.io/blog/kubernetes-best-practices](https://spacelift.io/blog/kubernetes-best-practices)
+
 ### Do
 
 - [ ] Do **all** the tasks on [https://kubernetes.io/docs/tasks/](https://kubernetes.io/docs/tasks/) - This section of the Kubernetes documentation contains pages that show how to do individual tasks. A task page shows how to do a single thing, typically by giving a short sequence of steps.
